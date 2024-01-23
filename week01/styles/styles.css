@@ -1,6 +1,6 @@
 main {
     max-width: 840px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto; 
 }
 
 aside {
@@ -14,7 +14,7 @@ aside {
 }
 
 aside img {
-    max-width: 100%; /* Garante que a imagem seja responsiva */
+    max-width: 200px; 
     height: auto;
 }
 
@@ -24,12 +24,12 @@ main img {
 }
 
 p {
-    margin: 0; /* Define uma margem zero para os parágrafos */
+    margin: 0;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #ddd; /* Ajusta a cor da borda */
+    margin-top: 10px; 
+    border-top: 1px solid #ddd; 
     text-align: center;
-    padding: 15px; /* Adiciona algum espaçamento interno ao footer */
+    padding: 0; 
 }
