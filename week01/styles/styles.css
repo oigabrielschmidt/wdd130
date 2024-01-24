@@ -1,6 +1,5 @@
 main {
     max-width: 840px;
-    margin: 0 auto; 
 }
 
 aside {
@@ -14,22 +13,19 @@ aside {
 }
 
 aside img {
-    max-width: 200px; 
+    width: 200px; 
     height: auto;
 }
 
 main img {
-    max-width: 100%;
+    width: 150px;
     height: auto;
 }
 
-p {
-    margin: 0;
-}
+p { margin: 0;}
 
 footer {
-    margin-top: 10px; 
-    border-top: 1px solid #ddd; 
+    margin-top: 15px; 
+    border-top: 1px solid #000; 
     text-align: center;
-    padding: 0; 
 }
