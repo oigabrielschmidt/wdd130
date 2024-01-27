@@ -11,24 +11,23 @@
 }
 
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
 }
-
-nav a {
+  
+  nav a {
     display: block;
-    color: var(--secondary-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
-
-nav a:link,
-nav a:visited {
-    color: var(--secondary-color);
+  
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
 }
-
-nav a:hover {
-    color: var(--accent2-color);
-    background-color: var(--accent1-color);
+  
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
