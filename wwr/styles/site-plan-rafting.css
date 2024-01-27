@@ -11,7 +11,6 @@
 }
 
 nav {
-nav {
     background-color: var(--primary-color);
     font-size: 1.2rem;
     display: flex;
@@ -32,5 +31,4 @@ nav a:visited {
 nav a:hover {
     color: var(--accent2-color);
     background-color: var(--accent1-color);
-}
 }
