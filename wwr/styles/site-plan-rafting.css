@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Afacad&display=swap');
 
-:root{
+:root {
     --fist-color: #219ebc;
     --second-color: #023047;
     --tird-color: #ffb703;
     --fourty-color: #fb8500;
 
-        --heading-font: 'afacad', serif;
-        --paragrap-font: 'aclonica', seif;
+    --heading-font: 'afacad', serif;
+    --paragrap-font: 'aclonica', serif;
 
-        --nav-background-collor: #219ebc;
-        --nav-link-collor: #fb8500;
-        --nav-hover-link-collor: #023047;
-        --nav-hover-background-collor: #ffb703;
+    --nav-background-color: #219ebc;
+    --nav-link-color: #fb8500;
+    --nav-hover-link-color: #023047;
+    --nav-hover-background-color: #ffb703;
+}
 
-        body {
-            
-        }
+body {
+    font-family: var(--paragrap-font);
 }
