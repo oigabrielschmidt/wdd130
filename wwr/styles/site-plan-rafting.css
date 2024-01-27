@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Afacad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');    
 
 :root {
-    --fist-color: #219ebc;
-    --second-color: #023047;
-    --tird-color: #ffb703;
-    --fourty-color: #fb8500;
+    --primary-color: #219ebc;
+    --secondary-color: #023047;
+    --accent1-color: #ffb703;
+    --accent2-color: #fb8500;
 
-    --heading-font: 'afacad', serif;
-    --paragraph-font: 'aclonica', serif;
+    --heading-font: 'Josefin Sans', serif;
+    --paragraph-font: 'Roboto', serif;
 
     --nav-background-color: #219ebc;
     --nav-link-color: #fb8500;
@@ -16,5 +16,27 @@
 }
 
 body {
-    font-family: 'Acme-Regular', sans-serif;
+    max-width: 960px;
+    padding: 20px;
+    font-family: var(--paragraph-font);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+section {
+    background-color: var(--primary-color);
+}
+
