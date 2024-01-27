@@ -10,18 +10,6 @@
     --paragraph-font: 'Roboto', serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
-
-:root {
-    --primary-color: #219ebc;
-    --secondary-color: #023047;
-    --accent1-color: #ffb703;
-    --accent2-color: #fb8500;
-
-    --heading-font: 'Josefin Sans', serif;
-    --paragraph-font: 'Roboto', serif;
-}
-
 nav {
     background-color: var(--primary-color);
     font-size: 1.2rem;
