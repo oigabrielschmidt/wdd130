@@ -7,7 +7,7 @@
     --fourty-color: #fb8500;
 
     --heading-font: 'afacad', serif;
-    --paragrap-font: 'aclonica', serif;
+    --paragraph-font: 'aclonica', serif;
 
     --nav-background-color: #219ebc;
     --nav-link-color: #fb8500;
@@ -16,5 +16,5 @@
 }
 
 body {
-    font-family: var(--paragrap-font);
+    font-family: 'Acme-Regular', sans-serif;
 }
