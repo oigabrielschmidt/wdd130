@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');    
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
 
 :root {
     --primary-color: #219ebc;
@@ -8,28 +8,29 @@
 
     --heading-font: 'Josefin Sans', serif;
     --paragraph-font: 'Roboto', serif;
+}
 
-   nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;  /* Adjust font size as needed */
+nav {
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
     display: flex;
 }
 
 nav a {
     display: block;
-    color: var(--nav-link-color);
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 1rem;
 }
 
 nav a:link,
 nav a:visited {
-    color: var(--nav-link-color);
+    color: var(--secondary-color);
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
 }
 
 body {
@@ -56,4 +57,3 @@ p {
 section {
     background-color: var(--primary-color);
 }
-
