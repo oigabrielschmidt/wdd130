@@ -37,7 +37,6 @@ aside {
     width: 20rem;
     text-align: center;
     position: relative;
-    /* 
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -45,7 +44,6 @@ aside {
     color: #333;
     top: 47px;
     left: 150px; 
-    */
 }
 
 aside img {
