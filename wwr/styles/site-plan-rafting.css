@@ -9,10 +9,27 @@
     --heading-font: 'Josefin Sans', serif;
     --paragraph-font: 'Roboto', serif;
 
-    --nav-background-color: #219ebc;
-    --nav-link-color: #fb8500;
-    --nav-hover-link-color: #023047;
-    --nav-hover-background-color: #ffb703;
+   nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;  /* Adjust font size as needed */
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 body {
