@@ -1,0 +1,92 @@
+/* rafting.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+
+/* Define CSS variables for color scheme */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --heading-color: #1e1e1e;
+}
+
+/* General styling */
+body {
+  font-family: 'Josefin Sans', sans-serif; /* Updated font reference */
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+}
+
+/* Font colors */
+a {
+  color: var(--primary-color);
+}
+
+/* Remove underlines from social media links */
+.social-media-link {
+  text-decoration: none;
+}
+
+/* Limit the entire width of the page */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Container styling */
+.hero {
+  position: relative;
+  height: 400px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+/* Hero Image styling */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Text positioning within the Hero Container */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Set the text color to be visible against the background */
+}
+
+/* Additional styling for the text elements */
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-text article {
+  position: absolute;
+  bottom: 20px; /* Adjust the bottom spacing as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(30, 30, 30, 0.8); /* Adjust the background color and opacity */
+  padding: 20px;
+  color: #fff;
+}
+
+.hero-text article img {
+  float: right;
+  margin-left: 20px;
+}

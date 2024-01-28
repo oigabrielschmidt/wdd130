@@ -32,3 +32,28 @@ nav a:hover {
     color: var(--accent2-color);
     background-color: var(--accent1-color);
 }
+
+body {
+    max-width: 960px;
+    padding: 20px;
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+section {
+    background-color: var(--primary-color);
+}
