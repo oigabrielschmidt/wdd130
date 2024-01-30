@@ -8,11 +8,6 @@
 
     --heading-font: 'Josefin Sans', serif;
     --paragraph-font: 'Roboto', serif;
-    
-    --nav-background-color: #ffffff;
-    --nav-link-color: #000000;
-    --nav-hover-link-color: #ff0000;
-    --nav-hover-background-color: #cccccc;
 }
 
 nav {
