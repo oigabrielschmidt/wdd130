@@ -47,6 +47,8 @@ header {
     padding: 20px;
     background-color: var(--primary-color);
     color: var(--accent1-color);
+    margin: 0 auto;
+    max-width: 840px;
 }
 
 main {
@@ -73,9 +75,6 @@ footer {
 
 aside {
     padding: 20px;
-}
-
-aside {
     background-color: lightgray;
 }
 
