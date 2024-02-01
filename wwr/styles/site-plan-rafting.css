@@ -1,15 +1,17 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
 
+/* Define Custom Properties */
 :root {
     --primary-color: #219ebc;
     --secondary-color: #023047;
     --accent1-color: #ffb703;
     --accent2-color: #fb8500;
-
     --heading-font: 'Josefin Sans', serif;
     --paragraph-font: 'Roboto', serif;
 }
 
+/* Navigation Styles */
 nav {
     background-color: var(--primary-color);
     font-size: 1.2rem;
@@ -33,38 +35,62 @@ nav a:hover {
     background-color: var(--accent1-color);
 }
 
+/* Body Styles */
 body {
     max-width: 960px;
     padding: 20px;
     font-family: var(--paragraph-font);
 }
 
+/* Heading Styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
 
+/* Header Styles */
 header {
     padding: 20px;
     background-color: var(--primary-color);
     color: var(--accent1-color);
 }
 
+/* Main Section Styles */
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns with a ratio of 1:2 */
+}
+
+/* Paragraph Styles */
 p {
     padding: 25px;
 }
 
-header, footer, .grid {
+/* Footer Styles */
+footer {
     margin: 0 auto;
     max-width: 840px;
 }
 
+/* Grid Styles */
 .grid {
     display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns with a ratio of 1:2 */
     align-items: center;
+    margin: 0 auto;
+    max-width: 840px;
 }
 
-.grid main {
-    display: grid;
-    align-items: center;
+/* Aside Styles */
+aside {
+    padding: 20px;
+}
+
+/* Additional Styling for Demo Purposes */
+aside {
+    background-color: lightgray;
+}
+
+main {
+    background-color: lightblue;
 }
