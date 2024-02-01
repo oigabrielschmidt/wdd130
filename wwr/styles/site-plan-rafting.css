@@ -54,10 +54,10 @@ p {
     padding: 25px;
 }
 
-section {
+/* Remove unused section styles */
+/* section {
     background-color: var(--primary-color);
-}
-
+} */
 
 header, footer, .grid {
     margin: 0 auto;
@@ -69,7 +69,8 @@ header, footer, .grid {
     align-items: center;
 }
 
-main {
+/* Target main inside .grid */
+.grid main {
     display: grid;
     align-items: center;
 }
