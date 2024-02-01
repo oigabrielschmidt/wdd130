@@ -23,7 +23,6 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link,
 nav a:visited {
     color: var(--secondary-color);
 }
@@ -53,6 +52,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 2fr; 
+}
 
 p {
     padding: 25px;
