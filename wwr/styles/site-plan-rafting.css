@@ -11,21 +11,17 @@
 }
 
 nav {
-    background-color: steelblue;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  nav a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
+    background-color: var(--primary-color);
     font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff; /% shorthand for white %/
-  } 
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 1rem;
+}
 
 nav a:visited {
     color: var(--secondary-color);
@@ -55,32 +51,34 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center; 
-    gap: 20px; 
-    margin: 0 auto;
-    max-width: 840px;
-    background-color: lightblue;
+    grid-template-columns: 1fr 2fr; 
 }
 
 p {
     padding: 25px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    gap: 20px;
-}
-
-aside {
-    padding: 20px;
-    background-color: lightgray;
-}
-
-header, footer, .grid {
+footer {
     margin: 0 auto;
     max-width: 840px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    align-items: center;
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+aside {
+    padding: 20px;
+}
+
+aside {
+    background-color: lightgray;
+}
+
+main {
+    background-color: lightblue;
+}
