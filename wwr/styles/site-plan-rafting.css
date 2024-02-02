@@ -47,15 +47,11 @@ header {
     padding: 20px;
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    margin: 0 auto;
-    max-width: 840px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 0 auto;
-    max-width: 840px;
+    grid-template-columns: 1fr 2fr; 
 }
 
 p {
@@ -69,7 +65,7 @@ footer {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr; 
     align-items: center;
     margin: 0 auto;
     max-width: 840px;
@@ -77,6 +73,9 @@ footer {
 
 aside {
     padding: 20px;
+}
+
+aside {
     background-color: lightgray;
 }
 
