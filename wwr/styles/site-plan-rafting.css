@@ -51,14 +51,14 @@ header {
     max-width: 840px;
 }
 
-/* Updated styling for main */
 main {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: center; /* Center content vertically */
-    gap: 20px; /* Adds some space between columns */
+    align-items: center; 
+    gap: 20px; 
     margin: 0 auto;
     max-width: 840px;
+    background-color: lightblue;
 }
 
 p {
@@ -70,7 +70,6 @@ footer {
     max-width: 840px;
 }
 
-/* Updated styling for grid */
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -80,13 +79,8 @@ footer {
     max-width: 840px;
 }
 
-/* Updated styling for aside */
 aside {
     padding: 20px;
     background-color: lightgray;
 }
 
-/* Updated styling for main (background color) */
-main {
-    background-color: lightblue;
-}
