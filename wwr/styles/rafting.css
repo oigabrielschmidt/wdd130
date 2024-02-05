@@ -13,7 +13,7 @@
 
 /* General styling */
 body {
-  font-family: 'Josefin Sans', sans-serif; /* Updated font reference */
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   color: var(--text-color);
   margin: 0;
@@ -45,10 +45,37 @@ a {
   margin: 0 auto;
 }
 
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+  background-color: var(--primary-color); /* Adjust the background color as needed */
+  }
+
+/* Logo styling */
+.logo {
+  max-width: 100%; /* Ensure the logo doesn't exceed its container */
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+}
+
+/* Individual navigation item styling */
+nav a {
+  color: #fff; /* Adjust the text color as needed */
+  text-decoration: none;
+  margin-left: 20px; /* Adjust spacing between navigation items */
+  font-weight: bold; /* Optionally set font weight */
+}
+
 /* Hero Container styling */
 .hero {
   position: relative;
-  height: 400px; /* Adjust the height as needed */
+  height: 400px;
   overflow: hidden;
 }
 
@@ -67,7 +94,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff; /* Set the text color to be visible against the background */
+  color: #fff;
 }
 
 /* Additional styling for the text elements */
@@ -78,10 +105,10 @@ a {
 
 .hero-text article {
   position: absolute;
-  bottom: 20px; /* Adjust the bottom spacing as needed */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(30, 30, 30, 0.8); /* Adjust the background color and opacity */
+  background-color: rgba(30, 30, 30, 0.8);
   padding: 20px;
   color: #fff;
 }
@@ -89,4 +116,36 @@ a {
 .hero-text article img {
   float: right;
   margin-left: 20px;
+}
+
+/* Adventures Section Styles */
+.adventures-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #fff; /* Set background color as needed */
+}
+
+/* Style for each adventure figure */
+.adventure-figure {
+  flex-basis: calc(20% - 20px); /* 20% width with 20px spacing between images */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for adventure images within each figure */
+.adventure-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Style for the caption below each adventure image */
+.adventure-caption {
+  margin-top: 10px;
+  color: var(--heading-color);
+  font-weight: bold;
+  font-size: 1.2em;
 }
