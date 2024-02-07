@@ -1,151 +1,59 @@
-/* rafting.css */
-
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
 
-/* Define CSS variables for color scheme */
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --text-color: #333;
-  --heading-color: #1e1e1e;
-}
-
-/* General styling */
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
-  color: var(--text-color);
-  margin: 0;
+  font-family: var(--paragraph-font); /* Set default font-family using CSS variable */
+  max-width: 960px; /* Limit the width of the document output to 960 pixels */
+  padding: 20px; /* Set padding around the document to 20 pixels */
 }
 
-/* Headings */
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #2ecc71;
+  --accent1-color: #00478ad2;
+  --accent2-color: #333 ;
+
+  --heading-font: 'Josefin', serif;
+  --paragraph-font: 'roboto', serif;
+
+  --nav-background-color: #00478ad2;
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: #1e1e1e;
+  --nav-hover-background-color: #333;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
-}
-
-/* Paragraphs */
-p {
-  line-height: 1.6;
-}
-
-/* Font colors */
-a {
+  font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* Remove underlines from social media links */
-.social-media-link {
-  text-decoration: none;
-}
-
-/* Limit the entire width of the page */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Header styling */
 header {
-  display: flex;
-  justify-content: space-between; /* Distribute items evenly along the main axis */
-  align-items: center; /* Center items vertically */
   padding: 20px;
-  background-color: var(--primary-color); /* Adjust the background color as needed */
-  }
-
-/* Logo styling */
-.logo {
-  max-width: 100%; /* Ensure the logo doesn't exceed its container */
+  background-color: var(--accent1-color);
 }
 
-/* Navigation bar styling */
+p {
+  padding: 25px;
+}
+
 nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
   display: flex;
 }
 
-/* Individual navigation item styling */
 nav a {
-  color: #fff; /* Adjust the text color as needed */
-  text-decoration: none;
-  margin-left: 20px; /* Adjust spacing between navigation items */
-  font-weight: bold; /* Optionally set font weight */
-}
-
-/* Hero Container styling */
-.hero {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-}
-
-/* Hero Image styling */
-.hero img {
   display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
 }
 
-/* Text positioning within the Hero Container */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
 }
 
-/* Additional styling for the text elements */
-.hero-text h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero-text article {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(30, 30, 30, 0.8);
-  padding: 20px;
-  color: #fff;
-}
-
-.hero-text article img {
-  float: right;
-  margin-left: 20px;
-}
-
-/* Adventures Section Styles */
-.adventures-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 40px;
-  background-color: #fff; /* Set background color as needed */
-}
-
-/* Style for each adventure figure */
-.adventure-figure {
-  flex-basis: calc(20% - 20px); /* 20% width with 20px spacing between images */
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Style for adventure images within each figure */
-.adventure-figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Style for the caption below each adventure image */
-.adventure-caption {
-  margin-top: 10px;
-  color: var(--heading-color);
-  font-weight: bold;
-  font-size: 1.2em;
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
