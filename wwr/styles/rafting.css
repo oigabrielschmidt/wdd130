@@ -13,7 +13,7 @@ body {
   --accent1-color: #00478ad2;
   --accent2-color: #333;
 
-  --heading-font: 'Josefin', serif;
+  --heading-font: 'Josefin Sans', serif;
   --paragraph-font: 'Roboto', serif; /* Added paragraph-font variable */
 
   --nav-background-color: #00478ad2;
