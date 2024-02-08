@@ -1,59 +1,124 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #2ecc71;
-  --accent1-color: #00478ad2;
-  --accent2-color: #333;
-
-  --heading-font: 'Josefin', serif;
-  --paragraph-font: 'Roboto', serif; /* Added paragraph-font variable */
-
-  --nav-background-color: #00478ad2;
-  --nav-link-color: #ffffff;
-  --nav-hover-link-color: #1e1e1e;
-  --nav-hover-background-color: #333;
-}
-
-body {
-  font-family: var(--paragraph-font); /* Set default font-family using CSS variable */
-  max-width: 960px; /* Limit the width of the document output to 960 pixels */
-  padding: 20px; /* Set padding around the document to 20 pixels */
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+    --primary-color: #A54C40;
+    --secondary-color: #F39B2A;
+    --accent1-color: #A95F4D;
+    --accent2-color: #FECF00;
+    --heading-font:'Urbanist', Sans Serif;
+    --paragraph-font:'Montserrat', Sans Serif;
+    --nav-background-color: #FAEC7C;
+    --nav-link-color: #A54C40;
+    --nav-hover-link-color: #240703;
+    --nav-hover-backgroung-color: #ffffff;
 }
 
 header {
-  padding: 20px;
-  background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 20px;
+    width: auto;
+    background-color: var(--accent2-color);
+    font-size: large;
 }
 
-p {
-  padding: 25px;
+header img {
+    grid-column: 1/2;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 960px;
+    color: var(--accent1-color);
 }
 
 nav {
-  background-color: var(--nav-background-color);
-  font-size: 1.2rem;
-  display: flex;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2/3;
 }
 
 nav a {
-  display: block;
-  color: var(--nav-link-color);
-  text-decoration: none;
-  padding: 1rem;
-}
-
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    color : var(--nav-hover-link-color);
+    background-color : var(--secondary-color);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);                
+}
+
+figure img {
+   max-width: 120px;   
+}
+
+.hero {
+    position: relative;
+    margin-top: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    color: var(--primary-color);
+    top: 5px;
+    left: 400px;
+    background-color: #FECF00;
+    opacity: .6;
+ }
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    background-color: var(--accent2-color);
+    opacity: .8;
+}
+
+.hero article img {
+    float: right;
+    width: 50%;
+}
+
+.hero p {
+    font-weight: bold;
+    font-size: large;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--paragraph-font);
+    margin-top: 1rem;
+    border-top: 2px solid #A54C40;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: end;       
+}
+
+a:link {
+    text-decoration: none;
 }
