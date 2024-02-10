@@ -4,12 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HTML and CSS Quiz</title>
-<meta name="description" content="A quiz about HTML and CSS">
-<meta name="author" content="Your Name">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
 <h1>HTML and CSS Quiz</h1>
-<!-- Your form goes here -->
+<form action="#" method="post">
+  <fieldset>
+    <legend>Question 1: Fill in the blank</legend>
+    <label for="q1">Fill in the blank: What does CSS stand for?</label><br>
+    <input type="text" id="q1" name="q1">
+  </fieldset>
+  <fieldset>
+    <legend>Question 2: Short Answer</legend>
+    <label for="q2">What does HTML stand for?</label><br>
+    <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>Question 3: Dropdown</legend>
+    <label for="q3">Which property is used to change the text color of an element in CSS?</label><br>
+    <select id="q3" name="q3">
+      <option value="a">color</option>
+      <option value="b">text-color</option>
+      <option value="c">font-color</option>
+      <option value="d">background-color</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Question 4: Integer Answer</legend>
+    <label for="q4">How many types of heading elements are there in HTML?</label><br>
+    <input type="number" id="q4" name="q4" min="1" max="6">
+  </fieldset>
+  <button type="submit">Submit Quiz</button>
+</form>
 </body>
 </html>
