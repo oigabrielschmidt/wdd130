@@ -189,8 +189,9 @@ legend {
 }
 
 label {
-    text-align: right;
+    text-align: center;
     padding-right: 1rem;
+    color: #ffffff; /* Change this to the color you prefer */
 }
 
 button {
@@ -246,8 +247,8 @@ button {
 
 .trips img {
     width: 100%;
-	height: 100%;   
-	object-fit: cover;  
+    height: 100%;   
+    object-fit: cover;  
 }
 
 .one, .three, .four, .five {
@@ -275,110 +276,4 @@ button {
     grid-column: 1;
     grid-row: 1;    
 }
-
-.one {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.one h3 {
-    position: absolute;
-	top: 237px;
-	left: 30px;
-	background: var(--primary-color);
-	border: var(--fieldset-color);
-	padding: 1rem;
-    font-size: 1.5rem;
-	opacity: 0.8;
- }
-
-.rapids3 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.three {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.three h3 {
-    position: absolute;
-	top: 559px;
-	right: 30px;
-	background: var(--primary-color);
-	border: var(--fieldset-color);
-	padding: 1rem;
-    font-size: 1.5rem;
-	opacity: 0.8;
- }
-
-.rapids4 {
-    grid-column: 1;
-    grid-row: 3;    
-}
-
-.four {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.four h3 {
-    position: absolute;
-	top: 879px;
-	left: 30px;
-	background: var(--primary-color);
-	border: var(--fieldset-color);
-	padding: 1rem;
-    font-size: 1.5rem;
-	opacity: 0.8;
- }
-
-.rapids5 {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.five {
-    grid-column: 1;
-    grid-row: 4;
-}
-
-.five h3 {
-    position: absolute;
-	top: 1194px;
-	right: 30px;
-	background: var(--primary-color);
-	border: var(--fieldset-color);
-	padding: 1rem;
-    font-size: 1.5rem;
-	opacity: 0.8;
- }
-
-.lineimages {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.lineimages img {
-    width: 100%;
-	height: 100%;   
-	object-fit: cover;
-    padding-top: 1rem;    
-    margin: 0;  
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: var(--paragraph-font);
-    margin-top: 1rem;
-    border-top: 2px solid #A54C40;
-}
-
-.sociallinks {
-    display: flex;
-    justify-content: end;       
-}
-
 

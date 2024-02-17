@@ -14,6 +14,70 @@
             height: 300px;
             width: 100%;
         }
+
+        .employee-profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .employee-profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .employee-profile p {
+            font-weight: bold;
+        }
+
+        .contact-form {
+            margin-top: 40px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form input[type="radio"] {
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="checkbox"] {
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        .contact-form .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form .submit-button:hover {
+            background-color: #45a049;
+        }
     </style>
     <script>
         let map;
@@ -54,23 +118,45 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2598164251763!2d-48.616216189546364!3d-26.79985458839962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8d1b8b66ca63b%3A0xe972b998081420db!2sBeto%20Carrero%20World!5e0!3m2!1sen!2sbr!4v1708172534915!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <p>©2024 | Raftingcompass | Gabriel Schmidt | WDD 130</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/face-logo.png" alt="Facebook" width="30">
-            </a>
-            
-            <a href="https://www.instagram.com">
-                <img src="images/instagram-icon.png.jpeg" alt="Instagram" width="30">
-            </a>
+        <section class="employee-profiles">
+            <h2>Meet Our Happy Team</h2>
+            <div class="employee-profile">
+                <img src="images/feliz-turista-usando-o-guia-turistico-na-cidade_13339-55181.jpg" alt="Employee 1">
+                <p>John Doe - Rafting Guide</p>
+            </div>
+            <div class="employee-profile">
+                <img src="images/feliz-turista-usando-o-guia-turistico-na-cidade_13339-55181.jpg" alt="Employee 2">
+                <p>Jane Smith - Trip Coordinator</p>
+            </div>
+            <div class="employee-profile">
+                <img src="images/feliz-turista-usando-o-guia-turistico-na-cidade_13339-55181.jpg" alt="Employee 3">
+                <p>Michael Johnson - Safety Officer</p>
+            </div>
+        </section>
 
-            <a href="https://www.twitter.com">
-                <img src="images/twiter-logo.png" alt="Twitter" width="30">
-            </a>
-        </nav>        
-    </footer>
-</body>
-</html>
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label>Purpose of Message:</label><br>
+                <input type="radio" id="general_inquiry" name="purpose" value="General Inquiry">
+                <label for="general_inquiry">General Inquiry</label><br>
+                <input type="radio" id="reservation_question" name="purpose" value="Reservation Question">
+                <label for="reservation_question">Reservation Question</label><br>
+                <input type="radio" id="website_suggestion" name="purpose" value="Website Suggestion">
+                <label for="website_suggestion">Website Suggestion</label><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
+
+                <input type="submit" value="Submit" class="submit-button">
+            </
