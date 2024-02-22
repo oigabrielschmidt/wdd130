@@ -4,162 +4,131 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Gabriel Schmidt | Contact Page</title>
-    <meta name="about us" content="Page to contact our team">
-    <meta name="author" content="Gabriel Schmidt">
+    <title>Contact | Raftingtravel Company</title>
+    <meta name="contact" content="Creating a form for contact infomation to Raftingtravel company">
+    <meta name="author" content="Karina Rodriguez">
     <link rel="stylesheet" href="styles/rafting.css">
-    <!-- Google Maps API script -->
-    <style>
-        #map {
-            height: 300px;
-            width: 100%;
-        }
-
-        .employee-profile {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .employee-profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .employee-profile p {
-            font-weight: bold;
-        }
-
-        .contact-form {
-            margin-top: 40px;
-        }
-
-        .contact-form label {
-            display: block;
-            font-weight: bold;
-        }
-
-        .contact-form input[type="text"],
-        .contact-form input[type="email"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .contact-form input[type="radio"] {
-            margin-top: 6px;
-            margin-bottom: 16px;
-        }
-
-        .contact-form textarea {
-            height: 150px;
-        }
-
-        .contact-form input[type="checkbox"] {
-            margin-top: 6px;
-            margin-bottom: 16px;
-        }
-
-        .contact-form .submit-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .contact-form .submit-button:hover {
-            background-color: #45a049;
-        }
-    </style>
-    <script>
-        let map;
-
-        function initMap() {
-            const location = { lat: 40.7128, lng: -74.0060 }; // Example coordinates (New York City)
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: location,
-                zoom: 15,
-            });
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map,
-            });
-        }
-    </script>
 </head>
 
 <body>
     <header>
-        <img src="images/brad-pearson-2MO_9uDDu30-unsplash.jpg" alt="Rafting Site Logo" width="120">
+        <img src="images/raftingcompas.jpg" alt="Raftingtravel Site Logo" width="120">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <A href="contact.html">Contact Us</A>
         </nav>
     </header>
 
+    
     <main>
-        <section>
-            <h1>Contact Us</h1>
-            <div>
-                <p>Address: 123 Main Street, City, State, ZIP</p>
-                <p>Phone: +1234567890</p>
-                <p>Email: info@example.com</p>
-                <div id="map"></div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2598164251763!2d-48.616216189546364!3d-26.79985458839962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8d1b8b66ca63b%3A0xe972b998081420db!2sBeto%20Carrero%20World!5e0!3m2!1sen!2sbr!4v1708172534915!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                    <div class="contact">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <label for="email">Email Adress</label>
+                    <input type="text" id="email" name="email">
+                    <label for="age">What is your age?</label>
+                    <input type="number" id="age" name="age" min="1" max="100">
+                    <label for="browser">Select your city</label>
+                        <select id="browser" name="browser">
+                        <option value="first">Delaware</option>
+                        <option value="second">Main</option>
+                        <option value="third">Vermont</option>
+                        <option value="fourth">Virginia</option>
+                        <option value="fiveth">Wyoming</option>
+                        <option value="sixth">Other</option>
+                        </select>
+                    </div>
+            </fieldset>
 
-        <section class="employee-profiles">
-            <h2>Meet Our Happy Team</h2>
-            <div class="employee-profile">
-                <img src="images/feliz-turista-usando-o-guia-turistico-na-cidade_13339-55181.jpg" alt="Employee 1">
-                <p>John Doe - Rafting Guide</p>
-            </div>
-            <div class="employee-profile">
-                <img src="images/feliz-turista-usando-o-guia-turistico-na-cidade_13339-55181.jpg" alt="Employee 2">
-                <p>Jane Smith - Trip Coordinator</p>
-            </div>
-            <div class="employee-profile">
-                <img src="images/feliz-turista-usando-o-guia-turistico-na-cidade_13339-55181.jpg" alt="Employee 3">
-                <p>Michael Johnson - Safety Officer</p>
-            </div>
-        </section>
+            <fieldset>
+                <legend>Interests</legend>
+                <div class="interest">
+                <input type="radio" id="white" name="white">    
+                <label for="white">White Water Rafting</label>
+                <input type="radio" id="hiking" name="hiking">    
+                <label for="hiking">Hiking Trips</label>
+                <input type="radio" id="fishing" name="fishing">    
+                <label for="fishing">Fishing Trips</label>
+                <input type="radio" id="other" name="other">    
+                <label for="other">Equipment Rental</label>
+                </div>
+           </fieldset>
 
-        <section class="contact-form">
-            <h2>Contact Form</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+            <fieldset>
+                <legend>Comments or Questions</legend>
+                <div class="comments">
+                    <label for="message">Do you have additional comment?</label>
+                    <textarea id="message" name="message" rows="6" placeholder="message"></textarea>
+                    <label for="suggestion">Do you have a web suggestion?</label>
+                    <textarea id="suggestion" name="suggestion" rows="6" placeholder="suggestion"></textarea>
+                </div>
+            </fieldset>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+            <fieldset>
+                <legend>Follow Us</legend>
+                <div class="followus">
+                  <input type="checkbox" id="subscription" name="subscription">
+                  <label for="subscription">Please subscribe me to the monthly newsletter</label>
+                </div>
+            </fieldset>                    
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <h2>Raftingtravel Team</h2>
+        <div class="employee">
+            <figure>
+                <img src="images/guideinstructor.jpg" alt="guide">
+                <figcaption>Raftingtravel Guide</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/safetyman.jpg" alt="safetyteam">
+                <figcaption>Raftingtravel Safety Instructor</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/instructor.jpg" alt="instructor">
+                <figcaption>Raftingtravel Instructor</figcaption>
+            </figure>
+        </div>
 
-                <label>Purpose of Message:</label><br>
-                <input type="radio" id="general_inquiry" name="purpose" value="General Inquiry">
-                <label for="general_inquiry">General Inquiry</label><br>
-                <input type="radio" id="reservation_question" name="purpose" value="Reservation Question">
-                <label for="reservation_question">Reservation Question</label><br>
-                <input type="radio" id="website_suggestion" name="purpose" value="Website Suggestion">
-                <label for="website_suggestion">Website Suggestion</label><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-
-                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
-
-                <input type="submit" value="Submit" class="submit-button">
-            </form>
-        </section>
+        <h2>Contact Info</h2>
+        <div class="location">
+        <p>Email:<a href="mailto:someone@example.com">raftingtravel@gmail.com</a></p>
+        <P>Tel: 01 225 000 000</p>
+        </div>
+        <h2>Location</h2>
+        <div class="map">
+            <p>Carretera Tlapacoyan - Martínez de la Torre S/N Piedra Pinta, 93650 Tlapacoyan, Ver., México</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29994.455216937924!2d-97.186241!3d19.99563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc73d356d7e8b%3A0x2308f67ee4ad4554!2sAventurec%20-%20Descenso%20en%20R%C3%ADo%20Filobobos%20-%20Rafting%2C%20Kayak%2C%20Tirolesa%2C%20Caminatas%2C%20Rapidos%2C%20Hotel%20Ecol%C3%B3gico.!5e0!3m2!1sen!2sus!4v1707363993583!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>                       
     </main>
+
+    <footer>
+        <p>©2024 | Raftingtravel | Karina Rodríguez | WDD 130</p>
+        
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook" width="30">
+            </a>
+            
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram" width="30">
+            </a>
+
+            <a href="https://www.pinterest.com" target="_blank">
+                <img src="images/pinterest.png" alt="Pinterest" width="30">
+            </a>
+
+            <a href="images/contactus_wireframe.jpg" target="_blank">
+                <img src="images/wireframe.png" alt="wireframe trips" width="30">
+            </a>            
+        </nav>        
+    </footer>
 </body>
+</html>

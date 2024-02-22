@@ -1,84 +1,66 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
 :root {
-    --primary-color: #219ebc;
-    --secondary-color: #023047;
-    --accent1-color: #ffb703;
-    --accent2-color: #fb8500;
-    --heading-font: 'Josefin Sans', serif;
-    --paragraph-font: 'Roboto', serif;
-}
-
-nav {
-    background-color: var(--primary-color);
-    font-size: 1.2rem;
-    display: flex;
-}
-
-nav a {
-    display: block;
-    color: var(--secondary-color);
-    text-decoration: none;
-    padding: 1rem;
-}
-
-nav a:visited {
-    color: var(--secondary-color);
-}
-
-nav a:hover {
-    color: var(--accent2-color);
-    background-color: var(--accent1-color);
+    --primary-color: #A54C40;
+    --secondary-color: #F39B2A;
+    --accent1-color: #A95F4D;
+    --accent2-color: #FECF00;
+    --heading-font:'Urbanist', Sans Serif;
+    --paragraph-font:'Montserrat', Sans Serif;
+    --nav-background-color: #FAEC7C;
+    --nav-link-color: #A54C40;
+    --nav-hover-link-color: #000000;
+    --nav-hover-backgroung-color: #ffffff;
 }
 
 body {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin: 0 auto;
     max-width: 960px;
     padding: 20px;
-    font-family: var(--paragraph-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 header {
     padding: 20px;
-    background-color: var(--primary-color);
-    color: var(--accent1-color);
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
+    background-color: var(--accent2-color)
 }
 
 p {
     padding: 25px;
 }
 
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    display: flex;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
 footer {
-    margin: 0 auto;
-    max-width: 840px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
-    align-items: center;
-    margin: 0 auto;
-    max-width: 840px;
-}
-
-aside {
-    padding: 20px;
-}
-
-aside {
-    background-color: lightgray;
-}
-
-main {
-    background-color: lightblue;
+    font-family: var(--paragraph-font);
+    margin-top: 1rem;
+    border-top: 2px solid #A54C40;
+    text-align: center; 
 }
