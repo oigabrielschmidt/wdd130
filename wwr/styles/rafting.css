@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 
 :root {
-    --primary-color: #452c0d;
-    --secondary-color: #F39B2A;
-    --accent1-color: #FAEC7C;
-    --accent2-color: #ff9500;
-    --heading-font:'Urbanist', Sans Serif;
-    --paragraph-font:'Montserrat', Sans Serif;
-    --nav-background-color: #FAEC7C;
-    --fieldset-color: darkgray;
-    --nav-hover-link-color: black;
-    --nav-hover-background-color: #ffffff;
+    --primary-color: #1D2D50;  /* Azul Marinho Profundo */
+    --secondary-color: #FFBB00;  /* Amarelo Brilhante */
+    --accent1-color: #00A6A6;  /* Verde-Água */
+    --accent2-color: #FF5733;  /* Laranja Coral */
+    --accent3-color: #7A6A53;  /* Marrom Claro */
+    --accent4-color: #292929;  /* Cinza Escuro */
+    --heading-font: 'Montserrat', Sans-serif;  /* Fonte para Títulos */
+    --paragraph-font: 'Roboto', Sans-serif;  /* Fonte para Parágrafos */
+    --nav-background-color: #FFBB00;  /* Amarelo Brilhante */
+    --fieldset-color: #ECECEC;  /* Cinza Claro */
+    --nav-hover-link-color: #1D2D50;  /* Azul Marinho Profundo */
+    --nav-hover-background-color: #FFBB00;  /* Amarelo Brilhante - Mesma cor do nav-background-color ao passar o mouse */
 }
 
 body {
